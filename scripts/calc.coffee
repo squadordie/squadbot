@@ -28,6 +28,8 @@ module.exports = (robot) ->
         res =  numbers[0] * numbers[1]
       when '/'
         res =  numbers[0] / numbers[1]
+      when '^'
+        res =  numbers[0] ** numbers[1]
 
 
     # weird hack to make our message send
