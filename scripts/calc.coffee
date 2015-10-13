@@ -4,7 +4,7 @@
 module.exports = (robot) ->
 
   # https://regex101.com/r/kD1iK4/2
-  robot.respond /(\d+)\s?(\+|-|\*|\/)\s?(\d+)/i, (msg) ->
+  robot.respond /(\d+)\s?(\+|-|\*|\/|\^)\s?(\d+)/i, (msg) ->
     # grab our operator
     operator = msg.match[2]
 
